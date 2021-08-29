@@ -1,81 +1,116 @@
-*{
-    box-sizing :border-box;
-}
-body{
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
     margin: 0;
-}
-.container{
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .container {
     height: 100vh;
-   
-    background-color: cyan;
-}
-
-.title-section{
+  }
+  
+  .title-section {
+    outline: none;
     height: 4%;
-    
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-background-color: blue;
-outline: none;
-    
-}
-
-.menu-bar-section{
-    height: 4%;
-    
-    display: flex;
-    align-items: center;
-    background-color: red;
-    
-}
-
-
-
-.file,.help{
-   color: white;
-   margin: 20px;
-}
-
-.menu-options-section{
-    height: 8%;
-    background-color: brown;
-}
-
-.formula-section{
-    height: 4%;
-    background-color: rgb(11, 129, 133);
-    display: flex;
-}
-
-.formula-section .selected-cell-div{
-    height: 100%;
-    width: 20%;
-    background-color: rgb(104, 155, 27);
-    text-align: center;
+    background-color: #27ae60;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.formula-section input{
+    color: white;
+  }
+  
+  .menu-bar-section {
+    height: 4%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-bar-section div {
+    margin-left: 20px;
+    color: black;
+  }
+  
+  .menu-options-section {
+    height: 8%;
+    background-color: #2ecc71;
+  }
+  
+  .formula-section {
+    height: 4%;
+    display: flex;
+  }
+  
+  .formula-section .selected-cell-div {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    align-items: center;
+  }
+  
+  .formula-section input {
     display: block;
     width: 80%;
     height: 100%;
-    border: none;
+    border: 1px solid;
     outline: none;
-    
-}
-
-.grid{
+  
+  }
+  
+  .grid {
     height: 76%;
-    background-color: yellow;
-}
-
-.sheet-section
-{
+    overflow: auto;
+  }
+  
+  .sheets-section {
     height: 4%;
-    background-color: purple;
-}
-
+    background-color: #2ecc71;
+  }
+  
+  .blank-corner {
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+  }
+  
+  .row-number-section {
+    display: inline-block;
+  }
+  
+  .row-number {
+    height: 30px;
+    width: 30px;
+    background-color: #27ae60;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  
+  .column-tag-section {
+    height: 30px;
+    position: fixed;
+    background: bisque;
+    top: 20vh;
+    left: 30px;
+    display: flex;
+  }
+  
+  .column-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    flex-shrink: 0;
+    height: 30px;
+    background-color: #27ae60;
+    border: none;
+    border-right: 1px solid;
+    color: white;
+  }
