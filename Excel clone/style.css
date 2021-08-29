@@ -1,0 +1,81 @@
+*{
+    box-sizing :border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    height: 100vh;
+   
+    background-color: cyan;
+}
+
+.title-section{
+    height: 4%;
+    
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: blue;
+outline: none;
+    
+}
+
+.menu-bar-section{
+    height: 4%;
+    
+    display: flex;
+    align-items: center;
+    background-color: red;
+    
+}
+
+
+
+.file,.help{
+   color: white;
+   margin: 20px;
+}
+
+.menu-options-section{
+    height: 8%;
+    background-color: brown;
+}
+
+.formula-section{
+    height: 4%;
+    background-color: rgb(11, 129, 133);
+    display: flex;
+}
+
+.formula-section .selected-cell-div{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(104, 155, 27);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formula-section input{
+    display: block;
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    
+}
+
+.grid{
+    height: 76%;
+    background-color: yellow;
+}
+
+.sheet-section
+{
+    height: 4%;
+    background-color: purple;
+}
+
